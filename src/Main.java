@@ -2,16 +2,15 @@ public class Main {
     public static void main(String[] args) {
         BonusMilesService service = new BonusMilesService();
         int price = 10_000;
-        int miles = service.calculate(10_000, 20); // должно получиться 500
-        System.out.println(miles);
+        int miles = service.calculate(10_000); // должно получиться 500
+        System.out.println("Начислено бонусных миль " + miles);
 
-        //System.out.println("10_000 / 20");
-        //System.out.println(service.calculate(10_000, 20));
+        System.out.println("Начислено бонусных миль " + service.calculate(12_000));
 
-        //System.out.println("12_100 / 20");
-        //System.out.println(service.calculate(123_234, 20));
+        System.out.println("Начислено бонусных миль " + service.calculate(14_452));
 
-        //System.out.println("20_500 / 20");
-        //System.out.println(service.calculate(432_456, 20));
+        System.out.println("Начислено бонусных миль " + service.calculate(11_876));
+
+        System.out.println("Начислено бонусных миль " + service.calculate(654_765));
     }
 }
